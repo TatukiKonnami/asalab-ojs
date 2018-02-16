@@ -1,11 +1,13 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 public class Category {
     private String Kind;
     private int Score = 0;
-
+    private List<String> FilterCode = new ArrayList<String>();
 
 
     public String getKind() {
@@ -24,17 +26,16 @@ public class Category {
         Score = score;
     }
 
+
     public boolean checkLine(String reg, List<String> codeLine){
-        int findCount = 0;
         Pattern pattern = Pattern.compile(reg);
-        for (String line : codeLine){
-            Matcher matcher = pattern.matcher(line);
-            if (matcher.find()){
-                findCount++;
-                Score++;
-            }
+        FilterCode = codeLine.stream()
+                             .filter(o ->  pattern.matcher(o).find())
+                             .collect(Collectors.toList());
+        if (FilterCode.size() != 0 ){
+            Score = 1;
         }
-        Score = Score / findCount;
         return true;
     }
+
 }

@@ -12,4 +12,6 @@ public class Pointer extends Category {
         checkLine(defineRgx, codeList);
         return true;
     }
+
+
 }
