@@ -26,4 +26,12 @@ public class AnalysisInternalCodeTest {
         assertThat("ユーザ関数のcategoryができている", code.getCategories().get(0).getKind(), is("UserFunction"));
         assertThat("関数のスコアは1",code.getCategories().get(0).getScore(), is(1));
     }
+
+    @Test
+    public void checkPointer() throws  IOException {
+        code.loadInterCode(path);
+        code.checkCategory();
+        assertThat("ポインターcategoryができている", code.getCategories().get(1).getKind(), is("Pointer"));
+        assertThat("ポインタのスコアは1", code.getCategories().get(1).getScore(), is(1));
+    }
 }

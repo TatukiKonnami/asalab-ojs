@@ -31,6 +31,14 @@ public class AnalysisInternalCode {
 
     public boolean checkCategory(){
         checkUserFunction();
+        checkPointer();
+        return true;
+    }
+
+    private boolean checkPointer() {
+        Pointer pointer = new Pointer();
+        pointer.setScore(CodeList);
+        Categories.add(pointer);
         return true;
     }
 
