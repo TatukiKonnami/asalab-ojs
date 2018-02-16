@@ -9,6 +9,9 @@ public class Category {
     private int Score = 0;
     private List<String> FilterCode = new ArrayList<String>();
 
+    public List<String> getFilterCode() {
+        return FilterCode;
+    }
 
     public String getKind() {
         return Kind;
@@ -35,6 +38,10 @@ public class Category {
         if (FilterCode.size() != 0 ){
             Score = 1;
         }
+        for(String o:FilterCode){
+            System.out.println(o);
+        }
+
         return true;
     }
 

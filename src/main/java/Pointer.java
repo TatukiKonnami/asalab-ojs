@@ -7,7 +7,7 @@ public class Pointer extends Category {
     }
 
     private boolean checkPointer(List<String> codeList) {
-        String defineRgx = "(|i32|i8|double|void|float|i64|)+(/*)";
+        String defineRgx = "i32|i8|double|void|float|i64";
         setKind("Pointer");
         checkLine(defineRgx, codeList);
         return true;
