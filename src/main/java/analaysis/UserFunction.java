@@ -1,5 +1,8 @@
+package analaysis;
+
+import analaysis.Category;
+
 import java.util.List;
-import java.util.regex.Pattern;
 
 public class UserFunction extends Category {
 
@@ -11,7 +14,7 @@ public class UserFunction extends Category {
 
     private boolean checkDefine(List<String> codeList) {
         String defineRgx = "define";
-        setKind("UserFunction");
+        setKind("analaysis.UserFunction");
         checkLine(defineRgx, codeList);
         return true;
     }
