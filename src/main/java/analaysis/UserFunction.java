@@ -1,6 +1,6 @@
 package analaysis;
 
-import analaysis.Category;
+
 
 import java.util.List;
 

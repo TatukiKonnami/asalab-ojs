@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class ComplieCode {
     public static boolean chageInterCode(String path) {
-        String[] command = {"clang", path, "-S", "-emit-llvm", "-o",  path + ".ll"}; // 起動コマンドを指定する
+        String[] command = {"clang", path, "-S", "-emit-llvm", "-o",  path + ".ll"};
         ProcessBuilder pb = new ProcessBuilder(command);
         try {
             pb.start();

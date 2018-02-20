@@ -1,7 +1,5 @@
 package analaysis;
 
-import analaysis.Category;
-
 import java.util.List;
 
 public class Pointer extends Category {
