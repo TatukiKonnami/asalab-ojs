@@ -1,7 +1,5 @@
 package analaysis;
 
-
-
 import java.util.List;
 
 public class UserFunction extends Category {
@@ -14,8 +12,9 @@ public class UserFunction extends Category {
 
     private boolean checkDefine(List<String> codeList) {
         String defineRgx = "define";
-        setKind("analaysis.UserFunction");
-        checkLine(defineRgx, codeList);
+        setKind("UserFunction");
+        setFilterCode(checkLine(defineRgx, codeList));
         return true;
     }
+
 }

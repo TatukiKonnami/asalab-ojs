@@ -31,6 +31,7 @@ public class AnalysisInternalCode {
     public boolean checkCategory(){
         checkUserFunction();
         checkPointer();
+        checkUserFunctionArg();
         return true;
     }
 
@@ -48,5 +49,12 @@ public class AnalysisInternalCode {
         return true;
     }
 
+    private boolean checkUserFunctionArg(){
+        UserFunctionArg userFunctionArg = new UserFunctionArg();
+        Category userfunc = getCategories().get(0);
+        userFunctionArg.setScore(userfunc.getFilterCode());
+        Categories.add(userFunctionArg);
+        return true;
+    }
 
 }

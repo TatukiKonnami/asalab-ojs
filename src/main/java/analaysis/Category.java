@@ -14,6 +14,10 @@ public class Category {
         return FilterCode;
     }
 
+    public void setFilterCode(List<String> filterCode) {
+        FilterCode = filterCode;
+    }
+
     public String getKind() {
         return Kind;
     }
@@ -31,19 +35,16 @@ public class Category {
     }
 
 
-    public boolean checkLine(String reg, List<String> codeLine){
+    public List<String> checkLine(String reg, List<String> codeLine){
         Pattern pattern = Pattern.compile(reg);
-        FilterCode = codeLine.stream()
-                             .filter(o ->  pattern.matcher(o).find())
-                             .collect(Collectors.toList());
+        setFilterCode(codeLine.stream()
+                              .filter(o ->  pattern.matcher(o).find())
+                              .collect(Collectors.toList()));
         if (FilterCode.size() != 0 ){
-            Score = 1;
+            setScore(1);
         }
-        for(String o:FilterCode){
-            System.out.println(o);
-        }
-
-        return true;
+        return FilterCode;
     }
+
 
 }
