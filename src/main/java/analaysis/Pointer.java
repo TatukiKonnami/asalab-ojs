@@ -10,10 +10,11 @@ public class Pointer extends Category {
 
     private boolean checkPointer(List<String> codeList) {
         String defineRgx = "\\*";
-        setKind("analaysis.Pointer");
+        setKind("Pointer");
         checkLine(defineRgx, codeList);
         return true;
     }
+    
 
 
 }

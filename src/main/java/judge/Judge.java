@@ -1,13 +1,10 @@
-package codeCompile;
+package judge;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
-public class ComplieCode {
-
-    public static boolean chageInterCode(String path) {
-        String[] command = {"clang", path, "-S", "-emit-llvm", "-o",  path + ".ll"};
+public class Judge {
+    public static boolean complieCode(String path) {
+        String[] command = {"clang", path, "-o", path + ".o"};
         ProcessBuilder pb = new ProcessBuilder(command);
         try {
             pb.start();
@@ -18,9 +15,8 @@ public class ComplieCode {
         }
     }
 
-    // does not work well (current)
-    public static boolean dumpAST(String path){
-        String[] command = {"clang", "-cc1", "-ast-dump", "-fblocks",  path, ">>", "d" + ".ast"};
+    public static boolean execution(String path){
+        String[] command = {"./" + path + ".o"};
         ProcessBuilder pb = new ProcessBuilder(command);
         try {
             pb.start();
@@ -30,4 +26,5 @@ public class ComplieCode {
             return false;
         }
     }
+
 }

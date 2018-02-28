@@ -2,6 +2,7 @@ package analaysis;
 
 import java.util.List;
 
+// not use class (current)
 public class Varable extends Category {
     public boolean setScore(List<String> codeList){
         checkVarable(codeList);
@@ -10,7 +11,7 @@ public class Varable extends Category {
 
     private boolean checkVarable(List<String> codeList) {
         String defineRgx = "(i32¥*|i8¥*|double¥*|float¥*|i64¥*)";
-        setKind("analaysis.Pointer");
+        setKind("Pointer");
         checkLine(defineRgx, codeList);
         return true;
     }
