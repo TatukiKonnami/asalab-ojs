@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75727587-8a94-4568-9398-49f15c35f74a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/analaysis/ConsoleOut.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/analaysis/DefineTypes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/analaysis/UserFunctionArg.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/judge/Judge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/analaysis/AnalysisInternalCode.class" afterPath="$PROJECT_DIR$/out/production/classes/analaysis/AnalysisInternalCode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/analaysis/Category.class" afterPath="$PROJECT_DIR$/out/production/classes/analaysis/Category.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/analaysis/Pointer.class" afterPath="$PROJECT_DIR$/out/production/classes/analaysis/Pointer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/analaysis/UserFunction.class" afterPath="$PROJECT_DIR$/out/production/classes/analaysis/UserFunction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/analaysis/Varable.class" afterPath="$PROJECT_DIR$/out/production/classes/analaysis/Varable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/analaysis/AnalysisInternalCode.java" afterPath="$PROJECT_DIR$/src/main/java/analaysis/AnalysisInternalCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/analaysis/Category.java" afterPath="$PROJECT_DIR$/src/main/java/analaysis/Category.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/analaysis/Pointer.java" afterPath="$PROJECT_DIR$/src/main/java/analaysis/Pointer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/analaysis/UserFunction.java" afterPath="$PROJECT_DIR$/src/main/java/analaysis/UserFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/analaysis/Varable.java" afterPath="$PROJECT_DIR$/src/main/java/analaysis/Varable.java" />
-    </list>
+    <list default="true" id="75727587-8a94-4568-9398-49f15c35f74a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -924,7 +908,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844576" sideWeight="0.17447495" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37209302" sideWeight="0.82552505" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37209302" sideWeight="0.82552505" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
