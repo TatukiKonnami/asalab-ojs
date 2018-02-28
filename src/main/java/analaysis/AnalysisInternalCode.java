@@ -42,6 +42,7 @@ public class AnalysisInternalCode {
         checkUserFunctionArg();
         checkWhileLoop();
         checkForLoop();
+        checkIFBranch();
         return true;
     }
 
@@ -78,6 +79,13 @@ public class AnalysisInternalCode {
         ForLoop forLoop = new ForLoop();
         forLoop.setScore(AstList);
         Categories.add(forLoop);
+        return true;
+    }
+
+    private boolean checkIFBranch(){
+        IfBranch ifBranch = new IfBranch();
+        ifBranch.setScore(AstList);
+        Categories.add(ifBranch);
         return true;
     }
 }
