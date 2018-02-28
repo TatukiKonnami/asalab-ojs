@@ -43,6 +43,7 @@ public class AnalysisInternalCode {
         checkWhileLoop();
         checkForLoop();
         checkIFBranch();
+        checkSwhichCase();
         return true;
     }
 
@@ -86,6 +87,13 @@ public class AnalysisInternalCode {
         IfBranch ifBranch = new IfBranch();
         ifBranch.setScore(AstList);
         Categories.add(ifBranch);
+        return true;
+    }
+
+    private boolean checkSwhichCase(){
+        SwitchCaseBranch switchCaseBranch = new SwitchCaseBranch();
+        switchCaseBranch.setScore(CodeList);
+        Categories.add(switchCaseBranch);
         return true;
     }
 }

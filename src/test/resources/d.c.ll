@@ -6,6 +6,8 @@ target triple = "x86_64-apple-macosx10.13.0"
 @.str = private unnamed_addr constant [4 x i8] c"%d \00", align 1
 @.str.1 = private unnamed_addr constant [2 x i8] c"\0A\00", align 1
 @.str.2 = private unnamed_addr constant [3 x i8] c"%d\00", align 1
+@.str.3 = private unnamed_addr constant [5 x i8] c"good\00", align 1
+@.str.4 = private unnamed_addr constant [4 x i8] c"bad\00", align 1
 
 ; Function Attrs: noinline nounwind ssp uwtable
 define void @disp(i32, i32*) #0 {
@@ -196,37 +198,61 @@ define void @main() #0 {
   %1 = alloca [10 x i32], align 16
   %2 = alloca i32, align 4
   %3 = alloca i32, align 4
+  %4 = alloca i32, align 4
   store i32 10, i32* %2, align 4
-  store i32 0, i32* %3, align 4
-  br label %4
+  store i32 10, i32* %3, align 4
+  store i32 0, i32* %4, align 4
+  br label %5
 
-; <label>:4:                                      ; preds = %13, %0
-  %5 = load i32, i32* %3, align 4
-  %6 = load i32, i32* %2, align 4
-  %7 = icmp slt i32 %5, %6
-  br i1 %7, label %8, label %16
+; <label>:5:                                      ; preds = %14, %0
+  %6 = load i32, i32* %4, align 4
+  %7 = load i32, i32* %2, align 4
+  %8 = icmp slt i32 %6, %7
+  br i1 %8, label %9, label %17
 
-; <label>:8:                                      ; preds = %4
-  %9 = load i32, i32* %3, align 4
-  %10 = sext i32 %9 to i64
-  %11 = getelementptr inbounds [10 x i32], [10 x i32]* %1, i64 0, i64 %10
-  %12 = call i32 (i8*, ...) @scanf(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.2, i32 0, i32 0), i32* %11)
-  br label %13
+; <label>:9:                                      ; preds = %5
+  %10 = load i32, i32* %4, align 4
+  %11 = sext i32 %10 to i64
+  %12 = getelementptr inbounds [10 x i32], [10 x i32]* %1, i64 0, i64 %11
+  %13 = call i32 (i8*, ...) @scanf(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.2, i32 0, i32 0), i32* %12)
+  br label %14
 
-; <label>:13:                                     ; preds = %8
-  %14 = load i32, i32* %3, align 4
-  %15 = add nsw i32 %14, 1
-  store i32 %15, i32* %3, align 4
-  br label %4
+; <label>:14:                                     ; preds = %9
+  %15 = load i32, i32* %4, align 4
+  %16 = add nsw i32 %15, 1
+  store i32 %16, i32* %4, align 4
+  br label %5
 
-; <label>:16:                                     ; preds = %4
-  %17 = load i32, i32* %2, align 4
-  %18 = sub nsw i32 %17, 1
-  %19 = getelementptr inbounds [10 x i32], [10 x i32]* %1, i32 0, i32 0
-  call void @quicksort(i32 0, i32 %18, i32* %19)
-  %20 = load i32, i32* %2, align 4
-  %21 = getelementptr inbounds [10 x i32], [10 x i32]* %1, i32 0, i32 0
-  call void @disp(i32 %20, i32* %21)
+; <label>:17:                                     ; preds = %5
+  %18 = load i32, i32* %2, align 4
+  %19 = sub nsw i32 %18, 1
+  %20 = getelementptr inbounds [10 x i32], [10 x i32]* %1, i32 0, i32 0
+  call void @quicksort(i32 0, i32 %19, i32* %20)
+  %21 = load i32, i32* %2, align 4
+  %22 = getelementptr inbounds [10 x i32], [10 x i32]* %1, i32 0, i32 0
+  call void @disp(i32 %21, i32* %22)
+  %23 = load i32, i32* %3, align 4
+  switch i32 %23, label %31 [
+    i32 4, label %24
+    i32 10, label %29
+  ]
+
+; <label>:24:                                     ; preds = %17
+  %25 = load i32, i32* %3, align 4
+  %26 = sext i32 %25 to i64
+  %27 = inttoptr i64 %26 to i8*
+  %28 = call i32 (i8*, ...) @printf(i8* %27)
+  br label %33
+
+; <label>:29:                                     ; preds = %17
+  %30 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.3, i32 0, i32 0))
+  br label %33
+
+; <label>:31:                                     ; preds = %17
+  %32 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.4, i32 0, i32 0))
+  br label %33
+
+; <label>:33:                                     ; preds = %31, %29, %24
   ret void
 }
 
