@@ -11,7 +11,7 @@ public class UserFunctionArg extends UserFunction{
 
     private boolean  checkArgument(List<String> codeList) {
         String defineRgx = "(.*\\(.*) + (.*\\*) + (.*\\))";
-        codeList.forEach(s -> System.out.println(s));
+        //codeList.forEach(s -> System.out.println(s));
         setKind("UserFunctionArgumentUsePointer");
         setFilterCode(checkLine(defineRgx, codeList));
         return true;

@@ -41,6 +41,7 @@ public class AnalysisInternalCode {
         checkPointer();
         checkUserFunctionArg();
         checkWhileLoop();
+        checkForLoop();
         return true;
     }
 
@@ -73,4 +74,10 @@ public class AnalysisInternalCode {
         return true;
     }
 
+    private boolean checkForLoop(){
+        ForLoop forLoop = new ForLoop();
+        forLoop.setScore(AstList);
+        Categories.add(forLoop);
+        return true;
+    }
 }
