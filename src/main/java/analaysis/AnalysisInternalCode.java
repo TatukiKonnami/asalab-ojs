@@ -11,12 +11,20 @@ import java.util.stream.Collectors;
 
 public class AnalysisInternalCode {
     private List<String> CodeList = new ArrayList<String>();
+    private List<String> AstList = new ArrayList<String>();
     private List<Category> Categories = new ArrayList<Category>();
 
     public boolean loadInterCode(String path) throws  IOException{
         String a = Files.lines(Paths.get(path), Charset.forName("UTF-8"))
                 .collect(Collectors.joining(System.getProperty("line.separator")));
         CodeList = Arrays.asList(a.split("\\n", 0));
+        return true;
+    }
+
+    public boolean loadASTFile(String path) throws IOException{
+        String a = Files.lines(Paths.get(path+".ast"), Charset.forName("UTF-8"))
+                .collect(Collectors.joining(System.getProperty("line.separator")));
+        AstList = Arrays.asList(a.split("\\n", 0));
         return true;
     }
 
@@ -32,6 +40,7 @@ public class AnalysisInternalCode {
         checkUserFunction();
         checkPointer();
         checkUserFunctionArg();
+        checkWhileLoop();
         return true;
     }
 
@@ -54,6 +63,13 @@ public class AnalysisInternalCode {
         Category userfunc = getCategories().get(0);
         userFunctionArg.setScore(userfunc.getFilterCode());
         Categories.add(userFunctionArg);
+        return true;
+    }
+
+    private boolean checkWhileLoop(){
+        WhileLoop whileLoop = new WhileLoop();
+        whileLoop.setScore(AstList);
+        Categories.add(whileLoop);
         return true;
     }
 

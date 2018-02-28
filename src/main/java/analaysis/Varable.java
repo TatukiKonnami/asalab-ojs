@@ -2,6 +2,7 @@ package analaysis;
 
 import java.util.List;
 
+// not use class (current)
 public class Varable extends Category {
     public boolean setScore(List<String> codeList){
         checkVarable(codeList);

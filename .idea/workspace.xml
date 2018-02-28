@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75727587-8a94-4568-9398-49f15c35f74a" name="Default" comment="" />
+    <list default="true" id="75727587-8a94-4568-9398-49f15c35f74a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/analaysis/UserFunctionReturn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/analaysis/WhileLoop.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/Main.class" afterPath="$PROJECT_DIR$/out/production/classes/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/analaysis/AnalysisInternalCode.class" afterPath="$PROJECT_DIR$/out/production/classes/analaysis/AnalysisInternalCode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/analaysis/Varable.class" afterPath="$PROJECT_DIR$/out/production/classes/analaysis/Varable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/codeCompile/ComplieCode.class" afterPath="$PROJECT_DIR$/out/production/classes/codeCompile/ComplieCode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/analaysis/AnalysisInternalCode.java" afterPath="$PROJECT_DIR$/src/main/java/analaysis/AnalysisInternalCode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/analaysis/Varable.java" afterPath="$PROJECT_DIR$/src/main/java/analaysis/Varable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/codeCompile/ComplieCode.java" afterPath="$PROJECT_DIR$/src/main/java/codeCompile/ComplieCode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main.java" afterPath="$PROJECT_DIR$/src/main/java/main.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -19,10 +31,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Category.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/analaysis/Category.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
+            <state relative-caret-position="-7">
               <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -34,48 +46,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserFunctionArg.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/analaysis/UserFunctionArg.java">
+      <file leaf-file-name="Judge.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/judge/Judge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="-7">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="d.c.ll" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/d.c.ll">
+      <file leaf-file-name="Varable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/analaysis/Varable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+            <state relative-caret-position="34">
+              <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefineTypes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/analaysis/DefineTypes.java">
+      <file leaf-file-name="UserFunctionReturn.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/analaysis/UserFunctionReturn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="34">
+              <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ComplieCode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/codeCompile/ComplieCode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
               <folding>
-                <element signature="e#263#264#0" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
-                <element signature="e#340#341#0" expanded="true" />
-                <element signature="e#381#382#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserFunction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/analaysis/UserFunction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -83,7 +91,7 @@
       <file leaf-file-name="d.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/d.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
+            <state relative-caret-position="-300">
               <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
               <folding />
             </state>
@@ -93,8 +101,8 @@
       <file leaf-file-name="main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+            <state relative-caret-position="221">
+              <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="e.c.ll" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/e.c.ll">
+      <file leaf-file-name="WhileLoop.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/analaysis/WhileLoop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="204">
+              <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -115,21 +123,12 @@
       <file leaf-file-name="AnalysisInternalCode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/analaysis/AnalysisInternalCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="391">
+              <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#395#403#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pointer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/analaysis/Pointer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -508,19 +507,21 @@
         <option value="$PROJECT_DIR$/src/main/java/Pointer.java" />
         <option value="$PROJECT_DIR$/src/main/java/codeConpile/complie.java" />
         <option value="$PROJECT_DIR$/src/test/java/codeCompile/ComplieCodeTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/codeCompile/ComplieCode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/analaysis/Varable.java" />
         <option value="$PROJECT_DIR$/src/main/java/analaysis/ConsoleOut.java" />
         <option value="$PROJECT_DIR$/src/main/java/analaysis/Types.java" />
         <option value="$PROJECT_DIR$/src/main/java/judge/Judge.java" />
         <option value="$PROJECT_DIR$/src/main/java/analaysis/DefineTypes.java" />
         <option value="$PROJECT_DIR$/src/main/java/analaysis/Pointer.java" />
         <option value="$PROJECT_DIR$/src/main/java/analaysis/UserFunction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/analaysis/AnalysisInternalCode.java" />
         <option value="$PROJECT_DIR$/src/test/resources/d.c" />
         <option value="$PROJECT_DIR$/src/main/java/analaysis/UserFunctionArg.java" />
         <option value="$PROJECT_DIR$/src/main/java/analaysis/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/java/analaysis/Varable.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/d.ast" />
+        <option value="$PROJECT_DIR$/src/main/java/analaysis/AnalysisInternalCode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/codeCompile/ComplieCode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/analaysis/WhileLoop.java" />
       </list>
     </option>
   </component>
@@ -642,7 +643,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -970,42 +971,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/codeCompile/ComplieCodeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AnalysisInternalCodeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/e.c.ll">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/analaysis/AnalysisInternalCode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -1301,30 +1266,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/analaysis/Varable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/codeCompile/ComplieCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="14" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/judge/Judge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AnalysisInternalCodeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
@@ -1346,16 +1287,6 @@
         <state relative-caret-position="352">
           <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/analaysis/AnalysisInternalCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1389,35 +1320,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/d.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/d.c.ll">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        <state relative-caret-position="0">
+          <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/analaysis/UserFunctionArg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
+        <state relative-caret-position="-7">
           <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding />
         </state>
@@ -1425,7 +1338,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/analaysis/Category.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
+        <state relative-caret-position="-7">
           <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1433,6 +1346,93 @@
             <element signature="e#411#412#0" expanded="true" />
             <element signature="e#450#451#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/judge/Judge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/d.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3026">
+          <caret line="0" column="10170" lean-forward="false" selection-start-line="0" selection-start-column="10170" selection-end-line="0" selection-end-column="10170" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/analaysis/UserFunctionReturn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/d.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300">
+          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/d.ast">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="151" column="35" lean-forward="true" selection-start-line="150" selection-start-column="36" selection-end-line="151" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/analaysis/AnalysisInternalCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#395#403#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/analaysis/Varable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/codeCompile/ComplieCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/analaysis/WhileLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1506,6 +1506,17 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.13020833" />
               </list>
             </option>
           </splitter-proportions>
