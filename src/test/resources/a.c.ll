@@ -1,9 +1,9 @@
-; ModuleID = '/Users/aika/asalab-ojs/src/test/resources/e.c'
-source_filename = "/Users/aika/asalab-ojs/src/test/resources/e.c"
+; ModuleID = '/Users/aika/asalab-ojs/src/test/resources/a.c'
+source_filename = "/Users/aika/asalab-ojs/src/test/resources/a.c"
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.13.0"
 
-@.str = private unnamed_addr constant [4 x i8] c"%d \00", align 1
+@.str = private unnamed_addr constant [5 x i8] c"%d w\00", align 1
 @.str.1 = private unnamed_addr constant [2 x i8] c"\0A\00", align 1
 @.str.2 = private unnamed_addr constant [3 x i8] c"%d\00", align 1
 
@@ -29,7 +29,7 @@ define void @disp(i32, i32*) #0 {
   %13 = sext i32 %12 to i64
   %14 = getelementptr inbounds i32, i32* %11, i64 %13
   %15 = load i32, i32* %14, align 4
-  %16 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str, i32 0, i32 0), i32 %15)
+  %16 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str, i32 0, i32 0), i32 %15)
   %17 = load i32, i32* %5, align 4
   %18 = srem i32 %17, 10
   %19 = icmp eq i32 %18, 9
@@ -72,6 +72,8 @@ define void @swap(i32*, i32*) #0 {
   %11 = load i32, i32* %5, align 4
   %12 = load i32*, i32** %4, align 8
   store i32 %11, i32* %12, align 4
+  %13 = load i32*, i32** %3, align 8
+  store i32 0, i32* %13, align 4
   ret void
 }
 
@@ -89,7 +91,7 @@ define void @quicksort(i32, i32, i32*) #0 {
   %10 = load i32, i32* %4, align 4
   %11 = load i32, i32* %5, align 4
   %12 = icmp slt i32 %10, %11
-  br i1 %12, label %13, label %75
+  br i1 %12, label %13, label %69
 
 ; <label>:13:                                     ; preds = %3
   %14 = load i32*, i32** %6, align 8
@@ -177,17 +179,9 @@ define void @quicksort(i32, i32, i32*) #0 {
   br label %24
 
 ; <label>:68:                                     ; preds = %24
-  %69 = load i32, i32* %4, align 4
-  %70 = load i32, i32* %8, align 4
-  %71 = load i32*, i32** %6, align 8
-  call void @quicksort(i32 %69, i32 %70, i32* %71)
-  %72 = load i32, i32* %7, align 4
-  %73 = load i32, i32* %5, align 4
-  %74 = load i32*, i32** %6, align 8
-  call void @quicksort(i32 %72, i32 %73, i32* %74)
-  br label %75
+  br label %69
 
-; <label>:75:                                     ; preds = %68, %3
+; <label>:69:                                     ; preds = %68, %3
   ret void
 }
 

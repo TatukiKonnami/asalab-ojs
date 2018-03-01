@@ -1,5 +1,7 @@
 package analaysis;
 
+import javafx.collections.transformation.FilteredList;
+
 import java.util.List;
 
 public class UserFunctionArg extends UserFunction{
@@ -10,10 +12,10 @@ public class UserFunctionArg extends UserFunction{
     }
 
     private boolean  checkArgument(List<String> codeList) {
-        String defineRgx = "(.*\\(.*) + (.*\\*) + (.*\\))";
-        //codeList.forEach(s -> System.out.println(s));
+        String defineRgx = "(.*\\()+(.*\\*)+(\\))";
         setKind("UserFunctionArgumentUsePointer");
         setFilterCode(checkLine(defineRgx, codeList));
+        //getFilterCode().forEach(s -> System.out.println(s));
         return true;
     }
 

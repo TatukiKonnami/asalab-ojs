@@ -38,12 +38,12 @@ public class AnalysisInternalCode {
 
     public boolean checkCategory(){
         checkUserFunction();
-        checkPointer();
+        //checkPointer();
         checkUserFunctionArg();
-        checkWhileLoop();
-        checkForLoop();
-        checkIFBranch();
-        checkSwhichCase();
+        //checkWhileLoop();
+        //checkForLoop();
+        //checkIFBranch();
+        //checkSwhichCase();
         return true;
     }
 
