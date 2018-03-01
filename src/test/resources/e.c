@@ -11,7 +11,7 @@ void disp(int n, int x[])
     printf("\n");
 }
 
-void swap(int x[], int y[])
+void swap(int *x, int *y)
 {
     int wk;
     wk=*x;
@@ -37,14 +37,11 @@ void quicksort(int first, int last, int x[])
     }
 }
 
-
-
 void main(){
-    int x[10], n=10, a=10;
+    int x[10], n=10;
     for(int i=0;i<n;i++){
-        scanf("%d",&x[i]);
+            scanf("%d",&x[i]);
     }
     quicksort(0,n-1,x);
     disp(n,x);
-
 }

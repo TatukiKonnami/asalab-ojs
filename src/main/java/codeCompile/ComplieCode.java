@@ -20,7 +20,7 @@ public class ComplieCode {
 
     // does not work well (current)
     public static boolean dumpAST(String path){
-        String[] command = {"clang", "-cc1", "-ast-dump", "-fblocks",  path, ">>", "d" + ".ast"};
+        String[] command = {"clang", "-cc1", "-ast-dump", "-fblocks",  path, "\\>\\>", path + ".txt"};
         ProcessBuilder pb = new ProcessBuilder(command);
         try {
             pb.start();
